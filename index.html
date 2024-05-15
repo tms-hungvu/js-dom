@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="custom.css" />
+  <title>Shopping Cart </title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__center container">
+      <div class="nav__logo">
+        <h1>Manchester<span>City</span></h1>
+      </div>
+
+      <ul class="nav__list">
+        <a href="#" class="login">Login</a>
+
+        <div class="app__cart--icon">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span class="app__cart--icon-quantity"> 0</span>
+        </div>
+
+      </ul>
+
+      
+    </div>
+  </nav>
+  
+  <section class="products">
+    
+
+    <div class="app__slider">
+          <div class="app__slider--image">
+              
+          </div>
+          <div class="app__slider--navgate">
+              <div class="app__slider--navgate-content">
+                  <ul class="app__slider--navgate-content-list">
+                     
+                  </ul>
+              </div>
+          </div>
+
+          <div class="app__slider--next app__slider--direct-item">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            
+          </div>
+          <div class="app__slider--prev app__slider--direct-item">
+             <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </div>
+
+    </div>
+    
+    <div class="product__center">
+     
+    
+     
+    </div>
+  </section>
+
+  <section class="cart__overlay">
+    <div class="cart ">
+      <span class="close__cart">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </span>
+      <h1>Your Cart</h1>
+      <div class="cart__centent">
+        <!-- Cart Item -->
+        
+
+
+
+      </div>
+
+      <div class="cart__footer">
+        <h3>Total: $ <span class="cart__total">0</span></h3>
+        <button class="clear__cart btn">Clear Cart</button>
+      </div>
+    </div>
+  </section>
+
+
+ <section class="app__popup--cart">
+     
+     <div class="app__popup--cart-list">
+
+      
+     </div>
+ </section>
+
+ <section class="app__view--product">
+    <div class="app__popup--cart-close">
+      <div class="app__popup--cart-close-icon">&times;</div>
+  </div>
+  
+ </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./public/slider.js"></script>
+  <script src="app.js"></script>
+  <script src="./public/cart.js"></script>
+</body>
+
+</html>
+

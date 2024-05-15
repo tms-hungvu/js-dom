@@ -1,0 +1,239 @@
+.app__cart--icon {
+     cursor: pointer;
+     color : white;
+     position: relative;
+}
+.app__cart--icon i {
+    font-size: 20px;
+}
+.app__cart--icon-quantity {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    right: -15px;
+    font-size: 10px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-weight: 700;
+}
+
+.app__slider {
+  
+    width: 100%;
+   
+    position: relative;
+}
+
+.app__slider--image img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+.app__slider--image-hidden {
+    display: none;
+}
+
+.app__slider--navgate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    position: absolute;
+    z-index: 9999;
+    bottom: 40px;
+    left: 0px;
+}
+.app__slider--navgate-content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+    padding : 10px 0px;
+}
+.app__slider--navgate-content-item {
+    background: rgb(222, 222, 233);
+    box-shadow: 0px 0px 0px 2px black;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.app__slider--navgate-content-item-active {
+    background: red !important;
+}
+
+.app__slider--direct-item {
+    z-index: 9999;
+    position: absolute;
+}
+.app__slider--next {
+    width: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top : 0px;
+    right : 20px;
+    color : white;
+    
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.app__slider--prev {
+    width: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top : 0px;
+    left : 20px;
+    color : white;
+    
+    font-size: 20px;
+    cursor: pointer;
+}
+.app__slider--next  i {
+    box-shadow: 0px 0px 0px black;
+}
+
+
+.app__popup--cart {
+    position: fixed;
+    top : 20px;
+    right: 20px;
+    width:  fit-content;
+    height: fit-content;
+   
+    z-index: 9999;
+}
+.app__popup--cart-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap : 10px;
+}
+
+.app__popup--cart-list-item {
+    display: flex;
+    gap : 10px;
+    background: #5BB75B;
+    color : white;
+    border-radius: 10px;
+    padding : 10px;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.726);
+}
+.app__popup--cart-list-item-image {
+    flex : 0 0 80px;
+}
+.app__popup--cart-list-item-image img{
+  width : 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.app__popup--cart-list-item-content {
+    width : 200px;
+    height: 100%;
+    gap : 5px;
+    display: flex;
+    flex-direction: column;
+}
+.app__popup--cart-list-item-content span:first-child {
+    font-weight: 700;
+}
+
+.app__popup--cart-list-item-content span:last-child {
+    color : rgba(187, 50, 50, 0.781);
+    font-weight: 700;
+}
+
+.cart__centent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart__centent  img {
+    width: 40% !important;
+   
+}
+.cart__centent  button {
+    background-color: red;
+    border-radius: 3px;
+    color : white;
+    cursor: pointer;
+    padding: 10px;
+    border : none;
+}
+.app__popup--cart-close {
+    position: relative;
+}
+.app__popup--cart-close-icon {
+    position: absolute;
+    font-size: 40px;
+    color : black;
+    top : 0px;
+    left: 0px;
+}
+.app__view--product {
+
+    z-index: 12000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top : 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: #00000093;
+}
+.app__view--product-container {
+    background: white;
+    border-radius: 5px;
+    width: 700px;
+    display: flex;
+    gap : 10px;
+
+}
+.app__view--product-container-left {
+    width: 100%;
+    padding : 40px;
+}
+
+.app__view--product-container-right {
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    padding : 40px;
+    width: 100%;
+}
+
+.app__view--product-container-left img {
+    width : 100%;
+    border-radius: 10px;
+}
+.app__view--product-container-right span:first-child {
+   font-size: 30px; 
+   font-weight: 500;
+}
+
+.app__view--product-container-right-price {
+    color : red;
+    font-size: 25px;
+ }
+
+ .app__view--product-container-right button {
+    background: red;
+    border : none;
+    cursor: pointer;
+    padding: 10px 10px;
+    color : white;
+ }

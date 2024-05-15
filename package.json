@@ -1,0 +1,15 @@
+{
+  "name": "javascript__shopping__cart-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "serve" : "npx json-server db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-serve": "^0.1.0"
+  }
+}
